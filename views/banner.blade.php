@@ -40,7 +40,7 @@
 <div id="cc-banner" style="display:none;" data-position="{{ $position }}">
     <div id="cc-backdrop"></div>
 
-    <div id="cc-panel">
+    <div id="cc-panel" role="dialog" aria-modal="true" aria-labelledby="cc-banner-title">
         {{-- Header --}}
         <div class="cc-header">
             <span class="cc-icon">
@@ -53,7 +53,7 @@
                     <circle cx="12" cy="18" r="0.8" fill="currentColor" stroke="none"/>
                 </svg>
             </span>
-            <h3 class="cc-title">{{ __('cookie-consent::cc.banner_heading') }}</h3>
+            <h3 id="cc-banner-title" class="cc-title">{{ __('cookie-consent::cc.banner_heading') }}</h3>
         </div>
 
         {{-- Text --}}
@@ -90,6 +90,7 @@
                             @else
                                 <label class="cc-switch">
                                     <input type="checkbox" id="cc-toggle-{{ $catKey }}"
+                                           aria-label="{{ $catMeta['label'] }}"
                                            {{ $hasConsented && !empty($consent[$catKey]) ? 'checked' : '' }}>
                                     <span class="cc-slider"></span>
                                 </label>
@@ -102,7 +103,7 @@
             {{-- Service details --}}
             @if($services)
             <div class="cc-details-section">
-                <button type="button" id="cc-show-details" class="cc-details-toggle">
+                <button type="button" id="cc-show-details" class="cc-details-toggle" aria-expanded="false" aria-controls="cc-details">
                     <span>{{ __('cookie-consent::cc.show_details') }}</span>
                     <svg class="cc-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="6 9 12 15 18 9"/>
@@ -137,7 +138,7 @@
             <button type="button" id="cc-save-selection" class="cc-btn cc-btn-primary" style="display:none;">
                 {{ __('cookie-consent::cc.save_selection') }}
             </button>
-            <button type="button" id="cc-toggle-options" class="cc-btn cc-btn-outline">
+            <button type="button" id="cc-toggle-options" class="cc-btn cc-btn-outline" aria-expanded="false" aria-controls="cc-options">
                 {{ __('cookie-consent::cc.options') }}
             </button>
         </div>
@@ -541,6 +542,7 @@
     function toggleOptions() {
         optionsOpen = !optionsOpen;
         optionsPanel.classList.toggle('cc-open', optionsOpen);
+        optionsBtn.setAttribute('aria-expanded', optionsOpen ? 'true' : 'false');
 
         if (optionsOpen) {
             // Show save, hide accept all + necessary only
@@ -611,6 +613,7 @@
             detailsPanel.style.display = hidden ? 'block' : 'none';
             detailsBtn.querySelector('span').textContent = hidden ? hideText : showText;
             detailsBtn.classList.toggle('cc-open', hidden);
+            detailsBtn.setAttribute('aria-expanded', hidden ? 'true' : 'false');
         });
     }
 })();
