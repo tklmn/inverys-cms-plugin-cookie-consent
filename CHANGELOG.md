@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.1.0] - 2026-03-21
+
+### Added
+- Two-step banner UX: initial view with Accept All / Necessary Only / Options buttons; Options reveals category toggles with Save button
+- Configurable reopen button position (left / right, default left)
+- Banner text reset-to-default button in admin settings
+- Animated banner entrance with backdrop blur and slide-in transition
+- Smooth toggle switch animations with cubic-bezier easing
+- Cookie icon in banner header
+- Consistent back button styling in admin views (matches CMS design)
+
+### Changed
+- Banner buttons restructured: Alle / Nur Notwendige / Optionen (initial) → Speichern / Optionen (expanded)
+- Reopen button uses rounded-square shape with shield SVG instead of Bootstrap icon
+- Categories panel uses CSS grid animation for expand/collapse
+
 ## [1.0.0] - 2026-03-21
 
 ### :tada: Initial Release

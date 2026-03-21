@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Nioteq_CMS-Plugin-6366f1?style=for-the-badge" alt="Nioteq CMS Plugin">
-  <img src="https://img.shields.io/badge/Version-1.0.0-22c55e?style=for-the-badge" alt="Version 1.0.0">
+  <img src="https://img.shields.io/badge/Version-1.1.0-22c55e?style=for-the-badge" alt="Version 1.0.0">
   <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="MIT License">
   <img src="https://img.shields.io/badge/GDPR-Compliant-16a34a?style=for-the-badge" alt="GDPR Compliant">
 </p>
