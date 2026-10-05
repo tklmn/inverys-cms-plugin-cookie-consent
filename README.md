@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Nioteq_CMS-Plugin-6366f1?style=for-the-badge" alt="Nioteq CMS Plugin">
+  <img src="https://img.shields.io/badge/Inverys_CMS-Plugin-6366f1?style=for-the-badge" alt="Inverys CMS Plugin">
   <img src="https://img.shields.io/badge/Version-1.1.0-22c55e?style=for-the-badge" alt="Version 1.0.0">
   <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="MIT License">
   <img src="https://img.shields.io/badge/GDPR-Compliant-16a34a?style=for-the-badge" alt="GDPR Compliant">
@@ -7,7 +7,7 @@
 
 # :shield: Cookie Consent
 
-A GDPR-compliant cookie consent plugin for [Nioteq CMS](https://github.com/tklmn/nioteq-cms). Category-based opt-in with external service management and conditional script injection.
+A GDPR-compliant cookie consent plugin for [Inverys CMS](https://github.com/tklmn/inverys-cms). Category-based opt-in with external service management and conditional script injection.
 
 ---
 
@@ -41,7 +41,7 @@ A GDPR-compliant cookie consent plugin for [Nioteq CMS](https://github.com/tklmn
 ### Option B: Composer
 
 ```bash
-composer require nioteq/cookie-consent
+composer require inverys/cookie-consent
 ```
 
 ---
@@ -125,7 +125,7 @@ cookie-consent/
 
 ## :page_facing_up: Requirements
 
-- **Nioteq CMS** >= 2.0
+- **Inverys CMS** >= 2.0
 - **PHP** >= 8.2
 
 ## :handshake: Author

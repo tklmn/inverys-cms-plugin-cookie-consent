@@ -1,14 +1,14 @@
 {
-    "name": "nioteq/cookie-consent",
-    "description": "GDPR-compliant cookie consent with category-based opt-in and external service management for Nioteq CMS.",
-    "type": "nioteq-plugin",
-    "version": "1.1.0",
+    "name": "inverys/cookie-consent",
+    "description": "GDPR-compliant cookie consent with category-based opt-in and external service management for Inverys CMS.",
+    "type": "inverys-plugin",
+    "version": "2.0.0",
     "license": "MIT",
     "authors": [
         { "name": "Tom Kilimann", "email": "tkilimann@icloud.com" }
     ],
     "extra": {
-        "nioteq": {
+        "inverys": {
             "slug": "cookie-consent"
         }
     },
